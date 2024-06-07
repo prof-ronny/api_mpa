@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Chinforinfula = require('../models/Chinforinfula');
+const Chinforinfula = require('../models/chinforinfula');
 
 // Rota para obter todos os Chinforinfulas
 router.get('/', async (req, res) => {
