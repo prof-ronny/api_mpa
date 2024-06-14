@@ -73,11 +73,11 @@ router.delete('/:id', getChinforinfula, async (req, res) => {
 
 async function getChinforinfula(req, res, next) {
   try {
-    const Chinforinfula = await Chinforinfula.findById(req.params.id);
-    if (Chinforinfula == null) {
+    const chinforinfula = await Chinforinfula.findById(req.params.id);
+    if (chinforinfula == null) {
       return res.status(404).json({ message: 'Chinforinfula não encontrado' });
     }
-    res.Chinforinfula = Chinforinfula;
+    res.Chinforinfula = chinforinfula;
     next();
   } catch (err) {
     return res.status(500).json({ message: err.message });
