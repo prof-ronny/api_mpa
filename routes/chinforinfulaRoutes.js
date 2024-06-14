@@ -19,7 +19,7 @@ router.get('/:id', getChinforinfula, (req, res) => {
 
 // Rota para criar um novo Chinforinfula
 router.post('/', async (req, res) => {
-  const Chinforinfula = new Chinforinfula({
+  const chinforinfula = new Chinforinfula({
     nome: req.body.nome,
     email: req.body.email,
     telefone: req.body.telefone,
